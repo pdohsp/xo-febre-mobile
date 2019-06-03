@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">xoFebre_App</string>
+    <string name="app_name">XoFebre</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

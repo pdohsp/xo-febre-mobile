@@ -33,76 +33,66 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="Xô, Febre!"
+                android:layout_gravity="center"
                 android:textColor="#000000"
                 android:textSize="40sp"
                 app:fontFamily="@font/aclonica" />
 
             <TextView
                 android:id="@+id/subtitulo"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="61dp"
-                android:layout_marginLeft="10dp"
                 android:text="Aprenda a combater a febre no mobile."
                 android:textColor="#000000"
                 android:textSize="18sp"
                 app:fontFamily="@font/aclonica" />
 
             <TextView
-                android:id="@+id/temperatura"
+                android:id="@+id/textViewTemperatura"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_height="50dp"
                 android:background="#E6E6FA"
                 android:text="Informe a sua temperatura:"
-                android:textColor="#000000"
-                android:textSize="25sp"
-                app:fontFamily="@font/anton" />
+                android:textColor="#F5000000"
+                android:textSize="20sp"
+                app:fontFamily="@font/aclonica" />
 
             <EditText
-                android:id="@+id/infotemp"
-                android:background="#E6E6FA"
+                android:id="@+id/editTextTemperatura"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_height="50dp"
+                android:background="#E6E6FA"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="numberDecimal" />
 
             <TextView
-                android:id="@+id/dias"
-                android:background="#E6E6FA"
+                android:id="@+id/textViewDias"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_height="50dp"
+                android:background="#E6E6FA"
                 android:text="Informe há quantos dias:"
                 android:textColor="#000000"
-                android:textSize="25sp"
-                app:fontFamily="@font/anton" />
+                android:textSize="20sp"
+                app:fontFamily="@font/aclonica" />
 
             <EditText
-                android:id="@+id/infodias"
-                android:background="#E6E6FA"
+                android:id="@+id/editTextDias"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_height="50dp"
+                android:background="#E6E6FA"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="numberDecimal" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBoxCotiza"
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_height="50dp"
                 android:background="#E6E6FA"
                 android:text="Coriza, dores no corpo ou indisposição?"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:fontFamily="@font/anton" />
+                app:fontFamily="@font/aclonica"/>
 
             <View
                 android:id="@+id/divcheckbox"
@@ -110,34 +100,11 @@
                 android:layout_height="15dp"
                 android:background="?android:attr/listDivider" />
 
-            <LinearLayout
+            <Button
+                android:id="@+id/buttonConsultar"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/enviar"
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:background="#D3D3D3"
-                    android:text="Enviar" />
-
-                <View
-                    android:id="@+id/divbotoes"
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="?android:attr/listDivider" />
-
-                <Button
-                    android:id="@+id/limpar"
-                    android:layout_width="180dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:background="#D3D3D3"
-                    android:text="Limpar" />
-            </LinearLayout>
+                android:layout_height="50dp"
+                android:text="Consultar" />
 
         </LinearLayout>
     </ScrollView>

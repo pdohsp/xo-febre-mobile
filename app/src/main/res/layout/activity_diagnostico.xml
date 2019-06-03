@@ -9,7 +9,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ADD8E6">
+        android:background="#ADD8E6"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,30 +33,68 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="Xô, Febre!"
+                android:layout_gravity="center"
                 android:textColor="#000000"
                 android:textSize="40sp"
                 app:fontFamily="@font/aclonica" />
 
             <TextView
-                android:id="@+id/subtitulo"
+                android:id="@+id/textViewDiagnostico"
                 android:layout_width="wrap_content"
-                android:layout_height="366dp"
+                android:layout_height="109dp"
                 android:layout_marginLeft="10dp"
                 android:text="Aprenda a combater a febre no mobile."
                 android:textColor="#000000"
-                android:textSize="18sp"
+                android:textSize="17sp"
                 app:fontFamily="@font/aclonica" />
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/buttonMap"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:text="Nova Consulta"
-                tools:layout_editor_absoluteX="170dp"
-                tools:layout_editor_absoluteY="413dp" />
+                android:text="Hospital"
+                app:fontFamily="@font/aclonica" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ADD8E6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonSair"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="25dp"
+                    android:text="Home"
+                    app:fontFamily="@font/aclonica" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:background="#ADD8E6" />
+
+                <Button
+                    android:id="@+id/buttonNovaConsulta"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="25dp"
+                    android:text="Nova Consulta"
+                    app:fontFamily="@font/aclonica" />
+
+            </LinearLayout>
 
         </LinearLayout>
+
     </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

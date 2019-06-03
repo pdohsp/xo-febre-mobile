@@ -31,6 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="Xô, Febre!"
+                android:layout_gravity="center"
                 android:textColor="#000000"
                 android:textSize="40sp"
                 app:fontFamily="@font/aclonica" />
@@ -47,22 +48,23 @@
 
             <TextView
                 android:id="@+id/titulo2"
-                android:layout_width="wrap_content"
-                android:layout_height="241dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:background="#FFFAFA"
-                android:text="Instituto Pernambucano de Ensino Superior\n\n\Desenvolvido por: André Lima / Pedro Santos\n\nProgramação Para Despositivos Móveis\n\nProfessor: Rômulo Lima\n\nConteúdo para fins acadêmicos"
+                android:text="  Instituto Pernambucano de Ensino Superior\n\n\  Desenvolvido por: André Lima / Pedro Santos\n\n  Programação Para Despositivos Móveis\n\n  Professor: Rômulo Lima\n\n  Conteúdo para fins acadêmicos"
                 android:textColor="#000000"
-                android:textSize="15sp"
-                app:fontFamily="@font/geostar_fill" />
+                android:textSize="13sp"
+                app:fontFamily="@font/aclonica" />
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Voltar"
+                android:id="@+id/buttonHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Home"
                 tools:layout_editor_absoluteX="170dp"
                 tools:layout_editor_absoluteY="413dp" />
 
